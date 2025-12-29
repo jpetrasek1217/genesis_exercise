@@ -53,7 +53,7 @@ python go2_eval.py
 
 ---
 
-### 8. Retrain and compare TensorBoard results to what you had the first time. Make sure you save your results from the first training session since the output model files will be overwritten.
+### 8. Retrain and compare TensorBoard results to what you had the first time.
 
 > Make sure to save your first session’s results, as retraining will overwrite the output model files.
 
