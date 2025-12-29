@@ -4,77 +4,58 @@ This repository contains a technical exercise for training and evaluating a robo
 
 ---
 
-## Getting Started
-
-### Clone the Repository
+1. Clone this repository
 
 ```bash
 git clone https://github.com/jpetrasek1217/genesis_exercise
 cd genesis_exercise
 ```
 
-### Install Dependencies
-
-Install the necessary Python libraries:
+2. Install the necessary Python libraries
 
 ```bash
 pip install tensorboard rsl-rl-lib==2.2.4
 ```
 
----
-
-## Training the Model
-
-Run the training script:
+3. Run the training script:
 
 ```bash
 python go2_train.py
 ```
 
-To monitor the training process, open TensorBoard in another terminal:
+4. To monitor the training process, open TensorBoard in another terminal:
 
 ```bash
 tensorboard --logdir logs
 ```
 
-> Take note of the final values under the `train/mean_reward` chart.
+5. Take note of the final values under the `train/mean_reward` chart.
 
----
-
-## Evaluating the Model
-
-Run the evaluation script:
+6. Evaluate the model
 
 ```bash
 python go2_eval.py
 ```
 
----
+7. Fix the issue in `go2_train.py` to improve the reward.
 
-## Improving the Model
-
-1. **Fix the issue in `go2_train.py`** to improve the reward.
-2. Retrain the model and compare the TensorBoard results to your initial training session.
+8. Retrain and compare TensorBoard results to what you had the first time. Make sure you save your results from the first training session since the output model files will be overwritten.
+   > Make sure to save your first session’s results, as retraining will overwrite the output model files.
 
 ```bash
-python go2_train.py
-tensorboard --logdir logs
+	python go2_train.py
+	tensorboard --logdir logs
 ```
-
-> Make sure to save your first session’s results, as retraining will overwrite the output model files.
 
 ---
 
-## Questions to Answer
+## Questions to Answer in Google Form
 
-1. **Fix Analysis:**
-   What did you fix in `go2_train.py` to improve the rewards? If you did not figure it out, what are your suspicions?
+1. What did you fix from go2_train.py to improve the rewards? If you did not figure it out, what are your suspicions?
 
-2. **Training Curve Analysis:**
-   Examine the `train/mean_reward` chart in TensorBoard. How did the training progress according to the curve? What do the X and Y axes represent?
+2. Look at the train/Mean Reward chart. How did the training go according to the curve? What do the X and Y axes values mean?
 
-3. **Screenshot:**
-   Attach a screenshot of the final `train/mean_reward` chart from TensorBoard.
+3. Attach a screenshot of the final train/Mean Reward training charts from the TensorBoard.
 
 ---
 
