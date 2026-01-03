@@ -16,7 +16,9 @@ cd genesis_exercise
 ### 2. Install the necessary Python libraries
 
 ```bash
-pip install tensorboard rsl-rl-lib==2.2.4
+pip install torch torchvision torchaudio
+pip install genesis-world
+pip install tensorboard gymnasium pyopengl stable-baselines3 rsl-rl-lib==2.2.4
 ```
 
 ---
